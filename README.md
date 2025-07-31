@@ -58,9 +58,32 @@ python -c "import secrets; print(secrets.token_urlsafe(32))"
 
 Note: Ensure gunicorn is included in requirements.txt
 
-💧 Project Structure
 
-💧 Project Structure ``` ml_fastapi_deploy/ ├── app.py # FastAPI main application ├── model.pkl # Trained ML model (Logistic Regression) ├── requirements.txt # Python dependencies ├── .gitignore # Git ignore rules ├── README.md # Project documentation ├── templates/ # HTML templates │ └── index.html # Web form for user input ├── static/ # Static files (images, CSS) │ └── images/ │ ├── alert_image.png │ ├── img.jpg │ └── okay_img.jpg ├── anaconda_projects/ # Model training and dataset │ ├── breast_cancer_prediction_model.ipynb # Jupyter Notebook for training │ ├── breast cancer.csv # Dataset (UCI Breast Cancer) │ └── project_filebrowser.db # Anaconda project metadata ``` 
+
+## 💧 Project Structure
+
+```text
+ml_fastapi_deploy/
+├── app.py                          # FastAPI main application
+├── model.pkl                       # Trained ML model (Logistic Regression)
+├── requirements.txt                # Python dependencies
+├── .gitignore                      # Git ignore rules
+├── README.md                       # Project documentation
+
+├── templates/                      # HTML templates
+│   └── index.html                  # Web form for user input
+
+├── static/                         # Static files (images, CSS)
+│   └── images/
+│       ├── alert_image.png
+│       ├── img.jpg
+│       └── okay_img.jpg
+
+├── anaconda_projects/              # Model training and dataset
+│   ├── breast_cancer_prediction_model.ipynb  # Jupyter Notebook for training
+│   ├── breast cancer.csv                     # Dataset (UCI Breast Cancer)
+│   └── project_filebrowser.db                # Anaconda project metadata
+```
 
 
 
