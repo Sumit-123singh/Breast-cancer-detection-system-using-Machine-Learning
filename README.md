@@ -60,28 +60,10 @@ Note: Ensure gunicorn is included in requirements.txt
 
 💧 Project Structure
 
-ml_fastapi_deploy/
-├── app.py                         # FastAPI main app
-├── model.pkl                      # Trained ML model using scikit-learn
-├── requirements.txt               # Python dependencies
-├── .gitignore                     # Ignore unnecessary files for Git
-├── README.md                      # Project documentation
+💧 Project Structure ``` ml_fastapi_deploy/ ├── app.py # FastAPI main application ├── model.pkl # Trained ML model (Logistic Regression) ├── requirements.txt # Python dependencies ├── .gitignore # Git ignore rules ├── README.md # Project documentation ├── templates/ # HTML templates │ └── index.html # Web form for user input ├── static/ # Static files (images, CSS) │ └── images/ │ ├── alert_image.png │ ├── img.jpg │ └── okay_img.jpg ├── anaconda_projects/ # Model training and dataset │ ├── breast_cancer_prediction_model.ipynb # Jupyter Notebook for training │ ├── breast cancer.csv # Dataset (UCI Breast Cancer) │ └── project_filebrowser.db # Anaconda project metadata ``` 
 
-├── templates/
-│   └── index.html                 # Web form for user inputs
 
-├── static/
-│   └── images/
-│       ├── alert_image.png
-│       ├── img.jpg
-│       └── okay_img.jpg
-
-├── anaconda_projects/
-│   ├── breast_cancer_prediction_model.ipynb  # Jupyter Notebook (Model training)
-│   ├── breast cancer.csv                     # Original dataset
-│   └── project_filebrowser.db                # Anaconda project metadata
 
 👨‍💻 Author
-
 Sumit Singh
 ML Enthusiast | Backend Developer
