@@ -1,4 +1,4 @@
-🧠 Breast Cancer Prediction - FastAPI App
+🧠 Breast Cancer Prediction - Flask App
 
 This project is a machine learning deployment using FastAPI for breast cancer prediction. It takes medical feature inputs from a web form and predicts whether the tumor is Malignant (Cancer) or Benign (Not Cancer).
 
