@@ -10,27 +10,6 @@ This project is a machine learning deployment using FastAPI for breast cancer pr
 
 git clone https://github.com/Sumit-123singh/Breast-cancer-detection-system-using-Machine-Learning
 
-💧 Project Structure
-
-ml_flask_deploy/
-├── app.py                         # FastAPI main app
-├── model.pkl                      # Trained ML model
-├── requirements.txt               # Python dependencies
-├── .gitignore                     # Files to ignore in Git
-├── README.md                      # Documentation
-
-├── templates/
-│   └── index.html                 # Frontend form
-
-├── static/
-│   └── images/
-│       ├── alert_image.png
-│       ├── img.jpg
-│       └── okay_img.jpg
-
-├── anaconda_projects/
-│   ├── breast_cancer_prediction_model.ipynb  # Model training notebook
-│   └── breast cancer.csv                     # Dataset
 
 ⚙️ Environment Setup
 
@@ -47,7 +26,7 @@ pip install -r requirements.txt
 
 🚀 Run the App Locally
 
-uvicorn app:app --reload
+gunicorn app:app 
 
 Visit: http://127.0.0.1:8000
 
@@ -77,10 +56,27 @@ MODEL_PATH=model.pkl
 
 Ensure gunicorn is in requirements.txt
 
+💧 Project Structure
+ml_fastapi_deploy/
+├── app.py                         # FastAPI main app
+├── model.pkl                      # Trained ML model using scikit-learn
+├── requirements.txt               # Python dependencies
+├── .gitignore                     # Ignore unnecessary files for Git
+├── README.md                      # Project documentation
 
+├── templates/
+│   └── index.html                 # Web form for user inputs
 
+├── static/
+│   └── images/
+│       ├── alert_image.png
+│       ├── img.jpg
+│       └── okay_img.jpg
 
-
+├── anaconda_projects/
+│   ├── breast_cancer_prediction_model.ipynb  # Jupyter Notebook (Model training)
+│   ├── breast cancer.csv                     # Original dataset
+│   └── project_filebrowser.db    
 
 
 
